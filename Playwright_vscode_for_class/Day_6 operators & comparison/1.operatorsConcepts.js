@@ -154,9 +154,17 @@ operations = {
 for(i=0;i<8;i++){
     setTimeout(function(){
     console.clear()
-    console.log("Hi, Im MicroBot")
-    console.log("  I was built by using below concepts.\n   1.for loop\n   2.if else\n   3.nested if else\n   4.setTimeout\n   5.Functions\n   6.For loops.\n   7.while loops.\n   8.logical operators \n   9.prompt module");
-    console.log("***APP will be loaded in" ,i--, "seconds ...")
+    
+    console.log(`
+    Hi, Iam Your Virtual Assistant,
+      I was built by using below concepts.
+        1.for loop          5.Functions
+        2.if else           6.while loops
+        3.nested if else    7.logical operators
+        4.setTimeout        8.prompt-sync module
+        
+    ***APP will be load in ${i--} seconds ...`);
+    
     
     
     },i*1000)
@@ -168,7 +176,7 @@ setTimeout(()=>{
 /* using while loop to repeat the same steps until user confirmation */
     while(should_continue){
         console.clear();
-        console.log("The features i have now, and can be expandable more");
+        console.log("Choose any option as you want");
         for(key in operations){
             console.log("  Press",key,"For",operations[key])
         };   
